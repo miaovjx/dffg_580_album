@@ -1,0 +1,17 @@
+Index: friend.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- friend.html	(revision 421c04ba2eff2e574b6ba30f8940995f287fac11)
++++ friend.html	(revision )
+@@ -24,7 +24,7 @@
+ <!-- load 预加载 -->
+ <div class="page-wrap">
+     <!-- 5 page_share 分享-->
+-    <div class="page page4 page_share" data-lock-prev="true" data-lock-next="true">
++    <div class="page page4 page_share sss" data-lock-prev="true" data-lock-next="true">
+         <div class="swiper-container swiper-container-bg swiper-container-bg-a ">
+             <div class="swiper-wrapper">
+                 <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg4.jpg" alt=""/></div>
+\ No newline at end of file
