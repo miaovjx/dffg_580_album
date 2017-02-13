@@ -22,14 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zan.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file:////176.10.10.230/www/dffg_580_record/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1486981331000" expanded="true" signature="4279:4359" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zan.js" pinned="false" current-in-tab="false">
         <entry file="file:////176.10.10.230/www/dffg_580_album/js/zan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
+            <state relative-caret-position="-714">
+              <caret line="197" column="36" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
               <folding>
                 <element signature="e#4011#6280#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file:////176.10.10.230/www/dffg_580_record/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,10 +72,10 @@
         <option value="$PROJECT_DIR$/../dffg_recored/js/index.js" />
         <option value="//176.10.10.230/www/dffg_580_record/js/PageSlider.js" />
         <option value="//176.10.10.230/www/dffg_580_album/js/index.js" />
-        <option value="//176.10.10.230/www/dffg_580_record/js/index.js" />
         <option value="//176.10.10.230/www/dffg_580_record/css/style.css" />
-        <option value="//176.10.10.230/www/dffg_580_record/index.html" />
         <option value="//176.10.10.230/www/dffg_580_album/js/zan.js" />
+        <option value="//176.10.10.230/www/dffg_580_record/index.html" />
+        <option value="//176.10.10.230/www/dffg_580_record/js/index.js" />
       </list>
     </option>
   </component>
@@ -208,7 +231,7 @@
       <option name="presentableId" value="Default" />
       <updated>1486690511494</updated>
       <workItem from="1486690512950" duration="25212000" />
-      <workItem from="1486948253767" duration="25466000" />
+      <workItem from="1486948253767" duration="26077000" />
     </task>
     <task id="LOCAL-00001">
       <created>1486691726047</created>
@@ -228,7 +251,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50678000" />
+    <option name="totallyTimeSpent" value="51289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
@@ -286,7 +309,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1486975962000" expanded="true" signature="4279:4359" placeholder="..." />
+            <marker date="1486981331000" expanded="true" signature="4279:4359" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -396,14 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:////176.10.10.230/www/dffg_580_record/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="187" column="22" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:////176.10.10.230/www/dffg_580_album/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93">
@@ -424,22 +439,30 @@
     </entry>
     <entry file="file:////176.10.10.230/www/dffg_580_record/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        <state relative-caret-position="570">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1486975962000" expanded="true" signature="4279:4359" placeholder="..." />
+            <marker date="1486981331000" expanded="true" signature="4279:4359" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:////176.10.10.230/www/dffg_580_album/js/zan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
+        <state relative-caret-position="-714">
+          <caret line="197" column="36" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
           <folding>
             <element signature="e#4011#6280#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:////176.10.10.230/www/dffg_580_record/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
