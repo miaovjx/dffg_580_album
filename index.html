@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=0">
-    <title> 趣发现，风光美 </title>
+    <title>迹录风光·100小时</title>
     <link rel="stylesheet" href="css/gx-animate.min.css?12112"/>
     <link rel="stylesheet" href="css/swiper-3.2.7.min.css"/>
     <link rel="stylesheet" href="css/style.css?12112"/>
+    <script>
+        /*监测代码*/
+    </script>
 </head>
 <body>
-
+<!-- load 预加载 -->
 <div class="loading">
     <div class="loading-text">
         <span class="loading-text-words">L</span>
@@ -21,127 +24,193 @@
         <span class="loading-text-words">G</span>
     </div>
 </div>
-<!-- load 预加载 -->
-<div class="page-wrap">
-    <input type="hidden" class="played" value="<?php echo $num;?>"/>  <!-- 程序返回的判断 玩没玩过 状态值 -->
-    <input type="hidden" class="owner" value="<?php echo $owner ;?>"/>  <!-- 程序返回的判断 验证是否通过 状态值 -->
-    <input type="hidden" class="imgNumber" value="<?php echo $exceed ;?>"/>  <!-- 程序返回的判断 用户已上传的图片数量 -->
+<div class="page-wrap ">
     <!-- 1 首页 -->
-    <div class="page page1 page_index none" data-lock-prev="true" data-lock-next="true">
+    <div class="page page1 " data-lock-prev="true" data-lock-next="true">
+        <div class="page_inner">
+            <img class="logo delay300" src="images/logo.png"/>
+            <img class="slogan delay300" src="images/slogan.png"/>
+            <img class="car delay300" src="images/car.png"/>
+                <a href="javascript:;" class="btns btn_a"></a>
+                <a href="javascript:;" class="btns btn_b"></a>
+                <a href="javascript:;" class="btns btn_c"></a>
+                <a href="javascript:;" class="btns btn_d"></a>
+        </div>
+    </div>
+    <!-- 2  视频列表-->
+    <div class="page page2" data-lock-prev="true" data-lock-next="true" style="-webkit-overflow-scrolling : touch">
+        <img class="top" src="images/top.jpg"/>
+        <a href="javascript:;" class="btn_back"></a>
+        <div class="page_inner" >
+           <ul class="vedio_lst">
+               <li class="vedio_wrap">
+                   <div class="title">盛大开幕 </div>
+                    <div class="headline"></div>
+                   <div class="vedio_box">
+                       <a href="javascript:;" class="v_btn v_btn1"></a>
+                       <div class="vedio_txt">
+                           2017年2月9日，超级都市SUV风光580超级公路粉丝节正式开启，超级车主齐聚三亚共享风光。
+                       </div>
+                   </div>
+               </li>
+               <li class="vedio_wrap">
+                   <div class="title">畅游海南三亚</div>
+                   <div class="headline"></div>
+                   <div class="vedio_box">
+                       <a href="javascript:;" class="v_btn v_btn2"></a>
+                       <div class="vedio_txt">
+                           超级都市SUV风光580超级车主畅玩海南三亚，风光自驾赏大美海岛风情，景点互动赢超级惊喜福利。
+                       </div>
+                   </div>
+               </li>
+               <li class="vedio_wrap">
+                   <div class="title">互动精彩瞬间</div>
+                   <div class="headline"></div>
+                   <div class="vedio_box">
+                       <a href="javascript:;" class="v_btn v_btn3"></a>
+                       <div class="vedio_txt">
+                           HI，风光580！超级公路粉丝节，自驾行精彩互动获得超级车主爆表称赞。
+                       </div>
+                   </div>
+               </li>
+               <li class="vedio_wrap">
+                   <div class="title">盛典精彩片段</div>
+                   <div class="headline"></div>
+                   <div class="vedio_box">
+                       <a href="javascript:;" class="v_btn v_btn4"></a>
+                       <div class="vedio_txt">
+                           载歌载舞欢庆元宵佳节，神秘嘉宾助阵燃爆粉丝盛典，幸运惊喜好礼不断，粉丝盛典精彩花絮抢先看。
+                       </div>
+                   </div>
+               </li>
+           </ul>
+        </div>
+    </div>
+    <!-- 3 图片轮播-->
+    <div class="page page3" data-lock-prev="true" data-lock-next="true" style="-webkit-overflow-scrolling : touch">
+        <img class="top" src="images/top2.jpg"/>
+        <a href="javascript:;" class="btn_back"></a>
         <div class="page_inner ">
-            <img class="sologan fadeInRight delay200" src="images/sologan.png" alt=""/>
-            <img class="car zoomIn delay600" src="images/car.png" alt=""/>
-            <img class="kuang vanishIn delay1000" src="images/kunag.png" alt=""/>
-            <img class="titleImg fadeInLeft delay500" src="images/titleImg.png" alt=""/>
-            <img class="redbag redbag1" src="images/redbag1.png" alt=""/>
-            <img class="redbag redbag2" src="images/redbag2.png" alt=""/>
-            <img class="redbag redbag3" src="images/redbag3.png" alt=""/>
-            <img class="redbag redbag4" src="images/redbag4.png" alt=""/>
-            <img class="redbag redbag5" src="images/redbag5.png" alt=""/>
-            <img class="redbag redbag6" src="images/redbag6.png" alt=""/>
-            <img class="redbag redbag7" src="images/redbag7.png" alt=""/>
-            <a href="javascript:;" class="btn_make none fadeInUp delay200"></a>
-            <a href="javascript:;" class="btn_my none"></a>
-            <a href="javascript:;" class="btn_list fadeInUp delay200"></a>
-            <a href="javascript:;" class="btn_rule bounceInRight delay1000"></a>
-            <a href="javascript:;" class="btn_jizan bounceInRight delay1000"></a>
+            <ul class="pic_lst">
+                <li class="pic_wrap">
+                    <div class="title">接机签到</div>
+                    <div class="headline"></div>
+                    <div class="pic_box">
+                        <div class="swiper-container swiper-container-aa">
+                            <div class="swiper-wrapper">
+                                <!--<div class="swiper-slide">  <img class="test" src="images/top3.jpg"/></div>-->
+                                <!--<div class="swiper-slide">Slide 2</div>-->
+                                <!--<div class="swiper-slide">Slide 3</div>-->
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic_wrap">
+                    <div class="title">交车仪式</div>
+                    <div class="headline"></div>
+                    <div class="pic_box">
+                        <div class="swiper-container swiper-container-a">
+                            <div class="swiper-wrapper">
+                                <!--<div class="swiper-slide">  <img class="test" src="images/top3.jpg"/></div>-->
+                                <!--<div class="swiper-slide">Slide 2</div>-->
+                                <!--<div class="swiper-slide">Slide 3</div>-->
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic_wrap">
+                    <div class="title">风光自驾</div>
+                    <div class="headline"></div>
+                    <div class="pic_box">
+                        <div class="swiper-container swiper-container-b">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic_wrap">
+                    <div class="title">专享福利</div>
+                    <div class="headline"></div>
+                    <div class="pic_box">
+                        <div class="swiper-container swiper-container-c">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic_wrap">
+                    <div class="title">粉丝盛典</div>
+                    <div class="headline"></div>
+                    <div class="pic_box">
+                        <div class="swiper-container swiper-container-d">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <!-- 2 验证 -->
-    <div class="page page2 page_test" data-lock-prev="true" data-lock-next="true">
-         <a href="javascript:;" class="btn_backs btn_back01 btn_back02"></a>
-        <img class="p2_1" src="images/p2_1.png" alt=""/>
-        <div class="test_box">
-            <img class="p2_2" src="images/p2_2.png" alt=""/>
-            <input type="text" class="ipt username" placeholder="姓名："/>
-            <input type="tel" class="ipt phone" placeholder="电话："/>
-            <a href="javascript:;" class="btn_submit"></a>
-        </div>
-    </div>
-
-    <!-- 3 确认传图完成页面 -->
-    <div class="page page3 page_sure" data-lock-prev="true" data-lock-next="true">
-        <input type="text" class="ipt2 pic_name" placeholder="请输入风光相册命名："/>
-        <img class="title" src="images/title.png" alt=""/>
-        <div class="swiper-container swiper-container-a none">
-            <div class="swiper-wrapper">
-                <!--<div class="swiper-slide"><img class="test" src="images/test.jpg" alt=""/></div>-->
-                <!--<div class="swiper-slide">Slide 2</div>-->
-                <!--<div class="swiper-slide">Slide 3</div>-->
-                <!--<div class="swiper-slide">Slide 4</div>-->
-            </div>
-        </div>
-        <a href="javascript:;" class="btn_upload "></a>
-        <a href="javascript:;" class="btn_done"></a>
-        <a href="javascript:;" class="btn_backs btn_back02"></a>
-    </div>
-    <!-- 4 -->
-    <div class="page page4 page_mylst" data-lock-prev="true" data-lock-next="true">
+    <!-- 4 媒体列表-->
+    <div class="page page4" data-lock-prev="true" data-lock-next="true" style="-webkit-overflow-scrolling : touch">
+        <img class="top" src="images/top3.jpg"/>
+        <a href="javascript:;" class="btn_back"></a>
         <div class="page_inner ">
-            <a href="javascript:;" class="btn_back"></a>
-            <div class="lst_wrap">
-                <ul class="my_pic_lsts clearfix">
-                    <!--<li>-->
-                        <!--<img class="test" src="images/test.jpg" alt=""/>-->
-                        <!--<a href="javascript:;" class="btn_dele"></a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-            <a href="javascript:;" class="btn_add"></a>
-            <a href="javascript:;" class="btn_over"></a>
+            <ul class="media_lst">
+                <!--<li class="media_wrap">-->
+                    <!--<div class="headline clearfix">-->
+                        <!--<img class="media_title1 fl" src="images/tit.png"/>-->
+                        <!--<div class="media_title2 fl">汽车之家论坛</div>-->
+                    <!--</div>-->
+                    <!--<div class="media_box">-->
+                        <!--<div class="media_txt">-->
+                            <!--东风风光品牌旗下首款SUV风光580正式开启预售，-->
+                            <!--1.8L舒适型和1.5T豪华型预售价格分别为7.89万和-->
+                            <!--8.99万元。-->
+                        <!--</div>-->
+                        <!--<ul class="media_info clearfix">-->
+                            <!--<li class="fl">2017-1-13</li>-->
+                            <!--<li class="fr">-->
+                                <!--<a href="javascript:;" class="btn_detail">查看详情</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            </ul>
         </div>
     </div>
-    <!-- 5 page_share 分享-->
-    <div class="page page5 page_share" data-lock-prev="true" data-lock-next="true">
-        <div class="swiper-container swiper-container-bg swiper-container-bg-a ">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg5.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg2.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg3.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg4.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg5.jpg" alt=""/></div>
-            </div>
+    <!-- 5 车主列表-->
+    <div class="page page5" data-lock-prev="true" data-lock-next="true" style="-webkit-overflow-scrolling : touch">
+        <img class="top" src="images/top4.jpg"/>
+        <a href="javascript:;" class="btn_back"></a>
+        <div class="page_inner " style="position: relative; min-height: 1026px;">
+            <ul class="friend_lst clearfix">
+                <!--<li class="friend_wrap">-->
+                    <!--<div class="headline">迹录风光·100小时</div>-->
+                    <!--<div class="friend_box">-->
+                        <!--<div class="media_txt">这个级别的自主SUV卖到10万以下</div>-->
+                        <!--<div class="friend_bottom">-->
+                            <!--<a href="javascript:;" class="btn_detail">查看详情</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
         </div>
-        <!--<img class="icon1" src="images/icon1.png" alt=""/>-->
-        <!--<img class="icon2" src="images/icon2.png" alt=""/>-->
-        <div class="swiper-container swiper-container-b ">
-            <div class="swiper-wrapper">
-                <!--<div class="swiper-slide"><img class="test delay500" src="images/test.jpg" alt=""/></div>-->
-                <!--<div class="swiper-slide"><img class="test" src="images/test.jpg" alt=""/></div>-->
-                <!--<div class="swiper-slide"><img class="test" src="images/test.jpg" alt=""/></div>-->
-                <!--<div class="swiper-slide"><img class="test" src="images/test.jpg" alt=""/></div>-->
-            </div>
-        </div>
-        <a href="javascript:;" class="btn_backs btn_back02"></a>
-        <a href="javascript:;" class="btn_share"></a>
-        <a href="javascript:;" class="btn_editor"></a>
-    </div>
-    <!-- 6 page_check 查看我的相册-->
-    <div class="page page6 page_check" data-lock-prev="true" data-lock-next="true">
-        <div class="swiper-container swiper-container-bg swiper-container-bg-b ">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg5.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg2.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg3.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg4.jpg" alt=""/></div>
-                <div class="swiper-slide"><img class="bgImg swiper-no-swiping" src="images/bg5.jpg" alt=""/></div>
-            </div>
-        </div>
-        <!--<img class="icon1" src="images/icon1.png" alt=""/>-->
-        <!--<img class="icon2" src="images/icon2.png" alt=""/>-->
-        <div class="swiper-container swiper-container-c ">
-            <div class="swiper-wrapper">
-                <!--<div class="swiper-slide"><img class="test" src="images/test.jpg" alt=""/></div>-->
-                <!--<div class="swiper-slide">Slide 2</div>-->
-                <!--<div class="swiper-slide">Slide 3</div>-->
-                <!--<div class="swiper-slide">Slide 4</div>-->
-            </div>
-        </div>
-        <a href="javascript:;" class="btn_backs btn_back02"></a>
-        <a href="javascript:;" class="btn_editor"></a>
     </div>
 </div>
+</body>
+
 
 <!-- 弹框 -->
 <div class="tk tk-load none">
@@ -150,79 +219,36 @@
         <p class="tlWrd">拼命加载中，请耐心等待</p>
     </div>
 </div>
+<div class="tk tk-video tk-video-a none">
+    <div class="tkIn tkvideo">
+        <div class="tkvMsk"></div>
+        <video src="vedio/v1.mp4" controls="controls" class="videos" x-webkit-airplay="true" webkit-playsinline="true" data-playing-loadingad="0" height="0">您的浏览器不支持video标签</video>
+    </div>
+</div>
+<div class="tk tk-video tk-video-b none">
+    <div class="tkIn tkvideo">
+        <div class="tkvMsk"></div>
+        <video src="vedio/v2.mp4" controls="controls" class="videos" x-webkit-airplay="true" webkit-playsinline="true" data-playing-loadingad="0" height="0">您的浏览器不支持video标签</video>
+    </div>
+</div>
+<div class="tk tk-video tk-video-c none">
+    <div class="tkIn tkvideo">
+        <div class="tkvMsk"></div>
+        <video src="vedio/v3.mp4" controls="controls" class="videos" x-webkit-airplay="true" webkit-playsinline="true" data-playing-loadingad="0" height="0">您的浏览器不支持video标签</video>
+    </div>
+</div>
+<div class="tk tk-video tk-video-d none">
+    <div class="tkIn tkvideo">
+        <div class="tkvMsk"></div>
+        <video src="vedio/v4.mp4" controls="controls" class="videos" x-webkit-airplay="true" webkit-playsinline="true" data-playing-loadingad="0" height="0">您的浏览器不支持video标签</video>
+    </div>
+</div>
 <!-- 分享 -->
-<div class="tk tk_share none">
-    <div class="tkIn ">
-        <img class="floating shareImg" src="images/shares.png" alt=""/>
-    </div>
-</div>
-<!-- 规则 -->
-<div class="tk tk_rule none">
-    <div class="tkIn ">
-        <img class="rule_img" src="images/rule.png" alt=""/>
-        <a href="javascript:;" class="close_btn"></a>
-    </div>
-</div>
-<!-- 没制作相册 -->
-<div class="tk tk_nopic none">
-    <div class="tkIn ">
-        <img class="rule_img" src="images/nopic.png" alt=""/>
-        <a href="javascript:;" class="sure_btn"></a>
-        <a href="javascript:;" class="make_btn"></a>
-    </div>
-</div>
-<!-- 验证失败 -->
-<div class="tk tk_test_fail none">
-    <div class="tkIn ">
-        <img class="tk_fail" src="images/tk_fail.png" alt=""/>
-        <a href="javascript:;" class="sure_btn"></a>
-    </div>
-</div>
-<!-- 上传弹窗 -->
-<div class="tk tk_noname none">
-    <div class="tkIn ">
-        <img class="tk1" src="images/tk1.png" alt=""/>
-        <a href="javascript:;" class="sure_btn"></a>
-    </div>
-</div>
-
-<div class="tk tk_ten none">
-    <div class="tkIn ">
-        <img class="tk2" src="images/tk2.png" alt=""/>
-        <a href="javascript:;" class="sure_btn"></a>
-    </div>
-</div>
-
-<div class="tk tk_pic_suc none">
-    <div class="tkIn ">
-        <img class="pic_suc" src="images/pic_suc.png" alt=""/>
-        <a href="javascript:;" class="sure_btn"></a>
-        <a href="javascript:;" class="jizan_btn"></a>
-    </div>
-</div>
-<div class="tk tk_info none">
-    <div class="tkIn ">
-        <div class="tk3">
-            <ul class="pic_ifo">
-                <li>恭喜您通过验证</li>
-                <li>风光相册名《<span class="pic_na">三亚走</span>》</li>
-                <li>相册编号<span class="pic_num">123</span></li>
-            </ul>
-            <div class="tips">温馨提示：为了风光大奖派送，请填写正确地址喲。</div>
-        </div>
-        <select name="pro" class="ipt3 pro"></select>
-        <select name="city" class="ipt3 city"></select>
-        <input type="text" class="ipt3 address" placeholder="详细地址"/>
-        <a href="javascript:;" class="sure_btn"></a>
-        <a href="javascript:;" class="cancel_btn"></a>
-    </div>
-</div>
-<!-- 上传弹窗 -->
-<div class="tk tk_eighteen none">
-    <div class="tkIn ">
-        <img class="tk_eighteen" src="images/eighteen.png" alt=""/>
-    </div>
-</div>
+<!--<div class="tk tk_share none">-->
+    <!--<div class="tkIn ">-->
+        <!--<img class="floating shareImg" src="images/shareImg.png" alt=""/>-->
+    <!--</div>-->
+<!--</div>-->
 
 <div id="orientLayer" class="mod-orient-layer">
     <div class="mod-orient-layer__content"><i class="icon mod-orient-layer__icon-orient"></i>
@@ -236,30 +262,12 @@
     <div id="qr-box__thumb" class="qr-box__thumb"></div>
     <div class="qr-box__text">微信扫一扫<br>手机浏览效果更佳</div>
 </div>
-<div style="display: none">
-    <script>
-        /*监测代码*/
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?2c63eb6561b54ee18095d863a4f1b2f9";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</div>
-</body>
 <!-- js -->
 <script src="js/jweixin-1.0.0.js"></script>
 <script src="js/zepto.min.js"></script>
-<script src="js/simpleInheritance.js"></script>
-<script src="js/StaticResoucesUtil.js"></script>
-<script src="js/PCASClass.js"></script>
 <script src="js/pxloader-images.min.js"></script>
 <script src="js/swiper-3.2.7.min.js"></script>
 <script src="js/PageSlider.js"></script>
-<script src="js/m.Tween.js"></script>
-<script src="js/index.js?<?php echo time();?>"></script>
-<script src="js/location.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

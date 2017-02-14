@@ -7,13 +7,12 @@
         gestureFollowing: false,  //是否需要手势跟随
         hasDot: false,            //是否生成标识点
         rememberLastVisited: false,
-        preventDefault: false,
+        preventDefault: true,
         animationPlayOnce: false,
         dev: false,               //开发模式，传入数值，直接跳到正在开发的屏数
         musicUrl: false,          //是否需要背景音乐
         shareUrl: 'https://yidian.weiyihui.com.cn/weixinshare/index.php', //默认分享方式
-        baseUrl: '',
-        onOff : true,    
+        baseUrl: '',      
         onSwipeUp: function () {  //swipeUp 回调
         },
         checkMobile: function(s) { //正则匹配手机号
@@ -35,13 +34,27 @@
         onbeforechange: function () {  //开始切换前的回调
           
         },
-        onchange: function () {   //每一屏切换完成时的回调\
-            var index = this.index + 1;
-            
-            var This = this;
-             if (index == 2) {
-               
- 
+        onchange: function () {   //每一屏切换完成时的回调
+             var index = this.index + 1;
+             var This = this;
+             var viewHeight= $(window).height();
+             if (index == 1) {
+
+             } else if (index == 10) {
+                 $('.redwindow').animate({height:viewHeight},5000,function (){
+                    $('.p10_1').removeClass('none').addClass('zoomIn');
+                     $('.p10_1').on('animationend webkitAnimationEnd',function(){
+                          
+                          setTimeout(function (){
+                            $('.p10_1').addClass('none');
+                            $('.p10_2 ').animate({top:0},4000,function (){
+                                $('.share_btn').removeClass('none');
+                                 $('.p10_3 ').addClass('tada');
+                                $('.p10_4 ').addClass('wobble');
+                            });
+                          },2000)                        
+                     });
+                 });
              }
         }
     };
@@ -106,8 +119,8 @@
 
                 //当子元素高度超过页面时，需滚完再切换
                 if (height > pageHeight) {
-                    // $this.data('height', height);
-                    // $this.css('overflow', 'auto');
+                    $this.data('height', height);
+                    $this.css('overflow', 'auto');
                 }
 
                 //再清除辅助层
@@ -534,7 +547,6 @@
                     } else {
                         wx.config({
                             debug: false,
-                           // debug: true,
                             appId: jsonData.appId,
                             timestamp: jsonData.timestamp,
                             nonceStr: jsonData.nonceStr,
@@ -545,11 +557,7 @@
                                 'onMenuShareAppMessage',
                                 'onMenuShareQQ',
                                 'onMenuShareWeibo',
-                                'closeWindow',
-                                'chooseImage',
-                                'uploadImage',
-                                'downloadImage',
-                                'previewImage'
+                               'closeWindow'
                             ]
                         });
                     }
@@ -565,7 +573,7 @@
             var baseUrl = this.baseUrl;
             var loader = new PxLoader();
             var LoadingImg = imgarr;
-            var loadnum = $('.progress');
+            var loadnum = $('.load .num');
             var imgLength = LoadingImg.length; //获取图片的数量
 
             for (var i = 0; i < imgLength; i++) {

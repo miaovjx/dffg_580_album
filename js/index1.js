@@ -42,7 +42,6 @@ $(function () {
                 var html2 = '';
                 var html3 = '';
                 var html4 = '';
-                $('.swiper-container-aa .swiper-wrapper').empty();
                 $('.swiper-container-a .swiper-wrapper').empty();
                 $('.swiper-container-b .swiper-wrapper').empty();
                 $('.swiper-container-c .swiper-wrapper').empty();

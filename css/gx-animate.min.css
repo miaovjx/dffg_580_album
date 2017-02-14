@@ -1,7 +1,16 @@
 @charset "UTF-8";
 /*add*/
 
+.circle2 { -webkit-animation: circle2 linear 2s infinite; animation: circle2 linear 2s infinite;}
+@-webkit-keyframes circle2 {
+0% { -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg)}
+100% {  -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg)}
+}
 
+@keyframes circle2 {
+0% { -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg)}
+100% {-webkit-transform: rotateZ(0deg); transform: rotateZ(0deg)}
+}
 .anilinea1 { -webkit-animation: linea1 .6s forwards; animation: linea1 .6s forwards;}
 @-webkit-keyframes linea1 {
 	0% { width: 0}
@@ -219,10 +228,10 @@
 
 /* 由小到大进入 */
 .zoomIn{-webkit-animation:zoomIn 1s ease both;animation:zoomIn 1s ease both}
-.zoomIn1{-webkit-animation:zoomIn1 1s ease both;animation:zoomIn1 1s ease both}
+
 /* 由小到大退出 */
 .zoomOut{-webkit-animation:zoomOut 1s ease both;animation:zoomOut 1s ease both}
-.zoomOut1{-webkit-animation:zoomOut1 1s ease both;animation:zoomOut1 1s ease both}
+
 /* 弹动进入 */
 .bounceIn{-webkit-animation:bounceIn .75s ease both;animation:bounceIn .75s ease both}
 .bounceInDown{-webkit-animation:bounceInDown 1s ease both;animation:bounceInDown 1s ease both}
@@ -251,6 +260,7 @@
 
 /* T形 */
 .lightSpeedIn{-webkit-animation:lightSpeedIn 1s ease-out both;animation:lightSpeedIn 1s ease-out both}
+.lightSpeedIn2{-webkit-animation:lightSpeedIn2 1s ease-out both;animation:lightSpeedIn2 1s ease-out both}
 .lightSpeedOut{-webkit-animation:lightSpeedOut 1s ease-in both;animation:lightSpeedOut 1s ease-in both}
 
 /* 向上蹦出 */
@@ -897,25 +907,6 @@
 	0%{opacity:0;transform:scale3d(.3,.3,.3)}
 	50%{opacity:1}
 }
-/* zoomIn1 */
-@-webkit-keyframes zoomIn1{
-	0%{opacity:1;-webkit-transform:scale3d(1,1,1)}
-	100%{opacity:1;-webkit-transform:scale3d(1.5,1.5,1.5)}
-}
-@keyframes zoomIn1{
-	0%{opacity:1;transform:scale3d(1,1,1)}
-	100%{opacity:1;transform:scale3d(1.5,1.5,1.5)}
-}
-/* zoomOut1 */
-@-webkit-keyframes zoomOut1{
-	0%{-webkit-transform:scale3d(1.5,1.5,1.5)}
-	100%{-webkit-transform:scale3d(1,1,1)}
-}
-@keyframes zoomOut1{
-	0%{transform:scale3d(1.5,1.5,1.5)}
-	100%{;transform:scale3d(1,1,1)}
-}
-
 
 /* zoomOut */
 @-webkit-keyframes zoomOut{
@@ -1174,7 +1165,18 @@
 	80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}
 	100%{-webkit-transform:none;transform:none;opacity:1}
 }
-
+@-webkit-keyframes lightSpeedIn2{
+	0%{-webkit-transform:translate3d(-100%,0,0) skewX(-30deg);transform:translate3d(-100%,0,0) skewX(-30deg);opacity:0}
+	60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}
+	80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}
+	100%{-webkit-transform:none;transform:none;opacity:1}
+}
+@keyframes lightSpeedIn2{
+	0%{-webkit-transform:translate3d(-100%,0,0) skewX(-30deg);transform:translate3d(-100%,0,0) skewX(-30deg);opacity:0}
+	60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}
+	80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}
+	100%{-webkit-transform:none;transform:none;opacity:1}
+}
 /* lightSpeedOut */
 @-webkit-keyframes lightSpeedOut{
 	0%{opacity:1}
